@@ -8,7 +8,6 @@ from api_NewEra import *
 import pandas as pd
 # from six import StringIO
 
-
 # 测试策略为 每个月初买入 远月平值期权的认购、认沽合约 持有5天后平仓策略
 
 # 近月 远月 季月 下季 4个合约 分认购、认沽 实值、平值、虚值三类
@@ -36,10 +35,6 @@ for i in range(4):
 etfdf0 = pd.read_csv('50etf.csv',encoding='utf-8')
 dataOption(df0, etfdf0)
 env()
-
-    # print(context.df0)
-
-
 # 每日开盘前运行函数
 # def before_market_open(context):
 date1 = '2015/03/13'
